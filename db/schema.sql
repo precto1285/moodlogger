@@ -1,7 +1,8 @@
+DROP DATABASE IF EXISTS mood_db;
 CREATE DATABASE mood_db;
-USE DATABASE mood_db;
+USE mood_db;
 
-CREATE TABLE mood_log {
+CREATE TABLE mood_log (
     id INT Auto_Increment,
     DATE, 
     TIMESTAMP,
@@ -9,4 +10,4 @@ CREATE TABLE mood_log {
     ACTIVITY VARCHAR(50),
 
     PRIMARY KEY (id)
-}
+)
